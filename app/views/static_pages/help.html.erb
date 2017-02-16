@@ -1,18 +1,8 @@
-<% provide(:title, "Help") %>
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= yield(:title) %> | Ruby on Rails Tutorial Sample App</title>
-  </head>
-  <body>
-    <h1>Help</h1>
-    <p>
-      Get help on the Ruby on Rails Tutorial at the
-      <a href="http://www.railstutorial.org/help">Rails Tutorial help
-      page</a>.
-      To get help on this sample app, see the
-      <a href="http://www.railstutorial.org/book"><em>Ruby on Rails
-      Tutorial</em> book</a>.
-    </p>
-  </body>
-</html>
+<% provide :title, t(".title") %>
+<h1><%= t ".title" %></h1>
+<p>
+  <%= t ".get_help" %>
+  <a href="http://www.railstutorial.org/help"><%= t ".rails_help" %></a>.
+  <%= t ".to_the_help" %>
+  <a href="http://www.railstutorial.org/book"><em><%= t ".ruby" %></em> <%= t ".book"%></a>.
+</p>
