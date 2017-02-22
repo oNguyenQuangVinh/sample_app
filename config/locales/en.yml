@@ -6,6 +6,11 @@ en:
       help: "Help"
       log_in: "Log in"
       ruby_sample: "Ruby on Rails Tutorial Sample App"
+      user: "Users"
+      account: "Acount"
+      profile: "Profile"
+      setting: "Settings"
+      log_out: "Log out"
     footer:
       the: "The"
       ruby: "Ruby on Rails Tutorial"
@@ -62,3 +67,11 @@ en:
     error_messages:
       form_contain: "The form contains"
       error: "error"
+  sessions:
+    create:
+      invalid: "Invalid email/password combination"
+    new:
+      title: "Log in"
+      new_user: "New user?"
+      sign_up: "Sign up now!"
+
