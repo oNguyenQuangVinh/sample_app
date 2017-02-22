@@ -70,8 +70,10 @@ en:
   sessions:
     create:
       invalid: "Invalid email/password combination"
+      checked: "1"
     new:
       title: "Log in"
       new_user: "New user?"
       sign_up: "Sign up now!"
+      remember: "Remember me on this computer"
 
