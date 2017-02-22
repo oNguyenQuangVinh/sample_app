@@ -1,4 +1,6 @@
 class ApplicationController < ActionController::Base
+
+  include ApplicationHelper
   protect_from_forgery with: :exception
   def set_locale
     I18n.locale = params[:locale] || I18n.default_locale
