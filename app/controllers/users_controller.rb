@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   before_action :load_user, only: :show
+
   def show
   end
 
@@ -19,6 +20,7 @@ class UsersController < ApplicationController
   end
 
   private
+
   def user_params
     params.require(:user).permit :name, :email, :password,
       :password_confirmation
