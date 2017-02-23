@@ -63,6 +63,25 @@ en:
       confirmation: "Confirmation"
     create:
       wellcome: "Welcome to the Sample App!"
+    update:
+      profile_updated: "Profile updated"
+    destroy:
+      user_deleted: "User deleted"
+    logged_in_user:
+      msg_login: "Please log in."
+    user:
+      delete: "delete"
+      you_sure: "You sure?"
+    edit:
+      title: "Edit user"
+      update_profile: "Update your profile"
+      confirmation: "Confirmation"
+      change: "change"
+      save: "Save changes"
+    index:
+      title: "All users"
+
+
   shared:
     error_messages:
       form_contain: "The form contains"

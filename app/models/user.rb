@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  before_save: downcase_email
+  before_save :downcase_email
 
   attr_accessor :remember_token
   validates :name, presence: true,length: {maximum: Settings.validates_name}
@@ -8,7 +8,7 @@ class User < ApplicationRecord
     format: {with: VALID_EMAIL_REGEX},
     uniqueness: {case_sensitive: false}
   has_secure_password
-  validates :password, presence: true, length: {minimum: Settings.minimum}
+  validates :password, presence: true, length: {minimum: Settings.minimum}, allow_nil: true
 
   def User.digest string
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
@@ -34,7 +34,7 @@ class User < ApplicationRecord
     update_attribute :remember_digest, nil
   end
 
-  private:
+  private
 
   def downcase_email
     self.email = email.downcase
