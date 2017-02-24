@@ -63,6 +63,7 @@ en:
       confirmation: "Confirmation"
     create:
       wellcome: "Welcome to the Sample App!"
+      msg_info: "Please check your email to activate your account."
     update:
       profile_updated: "Profile updated"
     destroy:
@@ -80,8 +81,6 @@ en:
       save: "Save changes"
     index:
       title: "All users"
-
-
   shared:
     error_messages:
       form_contain: "The form contains"
@@ -90,9 +89,23 @@ en:
     create:
       invalid: "Invalid email/password combination"
       checked: "1"
+      msg_acc: "Account not activated. "
+      msg_check_email: "Check your email for the activation link."
     new:
       title: "Log in"
       new_user: "New user?"
       sign_up: "Sign up now!"
       remember: "Remember me on this computer"
-
+  account_activations:
+    edit:
+      msg_activated: "Account activated!"
+      msg_invalid: "Invalid activation link"
+  user_mailer:
+    account_activation:
+      account_activation: "Account activation"
+      hi: "Hi "
+      title: "Sample App"
+    password_reset:
+      details: "find me in app/views/user_mailer/password_reset.text.erb"
+      title: "Password reset"
+      hi: "Hi "
