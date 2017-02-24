@@ -3,4 +3,5 @@ gravarta_size: 50
 minimum: 6
 validates_name: 50
 validates_email: 255
+password.reset: 2
 
