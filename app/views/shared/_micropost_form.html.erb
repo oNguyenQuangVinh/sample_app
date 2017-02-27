@@ -10,7 +10,7 @@
 <% end %>
 
 <script type="text/javascript">
-  $("#micropost_picture").bind(<%= t ".change" %>, function() {
+  $('#micropost_picture').bind(<%= t ".change" %>, function() {
     var size_in_megabytes = this.files[0].size/Settings.size_in_megabytes/Settings.size_in_megabytes;
     if (size_in_megabytes > Settings.picture_size) {
       alert(<%= t ".msg_maximum" %>);
