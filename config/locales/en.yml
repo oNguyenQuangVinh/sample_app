@@ -30,6 +30,7 @@ en:
       sample_app: "sample application"
       sign_up_now: "Sign up now!"
       rails_logo: "Rails logo"
+      micropost_feed: "Micropost Feed"
     help:
       ruby_sample: "Ruby on Rails Tutorial Sample App"
       title: "Help"
@@ -81,10 +82,21 @@ en:
       save: "Save changes"
     index:
       title: "All users"
+    show:
+      microposts: "Microposts"
   shared:
     error_messages:
       form_contain: "The form contains"
       error: "error"
+    micropost_form:
+      compose: "Compose new micropost..."
+      post: "Post"
+      msg_maximum: Maximum file size is 5MB. Please choose a smaller file."
+      change: "change"
+      accept: "image/jpeg,image/gif,image/png"
+    user_info:
+      views_profile: "view my profile"
+      microposts: "micropost"
   sessions:
     create:
       invalid: "Invalid email/password combination"
@@ -131,4 +143,18 @@ en:
     new:
       title: "Forgot password"
       submit: "Submit"
-
+  application:
+    logged_in_user:
+      msg_login: "Please log in."
+  microposts:
+    create:
+      msg_created: "Micropost created!"
+    picture_size:
+      error: "should be less than 5MB"
+    destroy:
+      msg_deleted: "Micropost deleted"
+    micropost:
+      posted: "Posted"
+      delete: "delete"
+      ago: "ago"
+      sure: "You sure?"

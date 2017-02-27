@@ -9,6 +9,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    @microposts = @user.microposts.paginate page: params[:page]
   end
 
   def new
@@ -54,14 +55,6 @@ class UsersController < ApplicationController
   def load_user
     @user = User.find_by id: params[:id]
     render_404 unless @user
-  end
-
-  def logged_in_user
-    unless logged_in?
-      store_location
-      flash[:danger] = t ".msg_login"
-      redirect_to login_url
-    end
   end
 
   def correct_user
