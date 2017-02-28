@@ -8,3 +8,4 @@ content_maximum: 140
 picture_size: 5
 resize_to_limit: 400
 size_in_megabytes: 1024
+gravatar_size_follow: 30

@@ -20,4 +20,9 @@ class ApplicationController < ActionController::Base
       redirect_to login_url
     end
   end
+
+  def load_user_follow
+    @user  = User.find_by id: params[:user_id]
+    render_404 unless @user
+  end
 end

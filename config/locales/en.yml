@@ -84,6 +84,21 @@ en:
       title: "All users"
     show:
       microposts: "Microposts"
+    following:
+      following: "Following"
+    followers:
+      followers: "Followers"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+    show_follow:
+      views_profile: "view my profile"
+      microposts: "Microposts"
+      no_human: "No human on list"
+    follow_form:
+      unfollow: "unfollow"
+      follow: "follow"
   shared:
     error_messages:
       form_contain: "The form contains"
@@ -97,6 +112,9 @@ en:
     user_info:
       views_profile: "view my profile"
       microposts: "micropost"
+    stats:
+      following: "following"
+      followers: "followers"
   sessions:
     create:
       invalid: "Invalid email/password combination"
@@ -158,3 +176,9 @@ en:
       delete: "delete"
       ago: "ago"
       sure: "You sure?"
+  followings:
+    index:
+      following: "Following"
+  followers:
+    index:
+      followers: "Followers"
