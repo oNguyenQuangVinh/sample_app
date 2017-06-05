@@ -11,7 +11,3 @@
   App.cable = ActionCable.createConsumer();
 
 }).call(this);
-
-$(document).ready(function(){
-  alert('occho');
-})
